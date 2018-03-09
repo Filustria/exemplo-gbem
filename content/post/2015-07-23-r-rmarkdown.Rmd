@@ -1,37 +1,616 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+title: "Perfil de Morbidade dos pacientes de duas Equipes de Saúde da Família do CMS João Barros Barreto, em Copacabana, Rio de Janeiro"
+author: "Adelson Guaraci Jantsch"
+date: "21 de fevereiro de 2018"
+output:  pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
+```{r setup, include=FALSE, warnings = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("G:\\copacabana")
+
+library(plyr)
+library(tidyverse)
+library(knitr)
+library(janitor)
+
+copa <- read.csv("teste.csv", header = TRUE, sep = ";", dec = ",")
 ```
 
-# R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Pessoal, aqui estão algumas análises que fiz apenas sobre alguns dados de morbidade. Ainda há muito mais para se analisar referente a encaminhamentos, solicitação de exames laboratoriais e prescrição de medicamentos. Vou explicando abaixo cada etapa do que fiz.
 
-You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
+
+# Cálculo da Idade
+
+```{r, warning = FALSE, echo = FALSE}
+
+# C?lculo da Idade
+library(lubridate)
+ddn <- copa$nascimento # separando data de nascimento do banco
+
+nascimento <- as.Date(ddn, "%d.%m.%Y") # convertendo a data para formato YYYY-mm-dd
+
+head(nascimento)
+head(copa$nascimento) # transforma??o funcionou
+
+# criando fun??o para calcular a idade baseado no dia de hoje
+
+calcula_idade <- function(nascimento, dia = today(), units = "years", floor = TRUE) {
+  calc.idade = new_interval(nascimento, dia) / duration(num = 1, units = units)
+  if (floor) return(as.integer(floor(calc.idade)))
+  return(calc.idade)
+}
+
+idade <- calcula_idade(nascimento, floor = FALSE)
+
+copa$idade <- calcula_idade(nascimento, floor = FALSE)
+
+summary(copa$idade)
+
 ```
 
-# Including Plots
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
 
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
+
+Graficamente a informação de idade para cada uma das equipes pode ser vista na tabela abaixo, na qual se observa que a equipes Ceci atendeu uma população mais nova, com dois grupos priorit?rios: crian?as e adultos. A equipe Curumim atendeu prioritariamente idosos, com uma concentração significativa de adultos.
+
+```{r}
+
+p <- ggplot(copa, aes(factor(equipe), idade, color = equipe))
+p + geom_violin() + geom_jitter(height = 0, width = 0.1) + 
+  ggtitle("Distribuição das Idades dos Pacientes no CMS JBB") +
+  xlab("Equipe de Saúde da Família") + ylab("Idade")
+
+
 ```
+
+
+
+
+# DIABETES
+
+Foram consideradas como diabéticos aqueles pacientes que apresentaram os CID "E10", "E11", "E12", "E14" na vari?vel CIDs.
+
+```{r, echo = FALSE}
+
+diabetes <- c("E10", "E11", "E12", "E14")
+copa$DM <- grepl(paste(diabetes, collapse = "|"), copa$CID)
+copa$DM <- as.factor(ifelse(copa$DM == TRUE, 1,0)) # 29 diab?ticos no total
+
+diabet <- copa %>%  group_by(equipe) %>% count(DM)  %>%  mutate(prop = prop.table(n)*100)
+kable(diabet)
+
+
+diabeta <- summary(copa$DM[copa$equipe == "curumim"])
+diabetb <- summary(copa$DM[copa$equipe == "ceci"])
+diabetc <- matrix(c(diabeta,diabetb), ncol=2)
+nome <- c("ausente", "presente")
+diabetm <- as.data.frame(cbind(nome, diabetc))
+names(diabetm)[names(diabetm) == 'nome'] <- 'DIABETES'
+names(diabetm)[names(diabetm) == 'V2'] <- 'Curumim'
+names(diabetm)[names(diabetm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de Diabéticos entre as equipes. Existe diferença significativa na proporção de pacientes atendidos por Diabetes
+
+```{r}
+kable(diabetm)
+
+
+chisq.test(diabetc)
+```
+
+
+
+
+
+# HIPERTENSÃO
+
+Foi considerado como "hipertenso" apenas as pessoas que receberam o CID I10
+
+```{r, echo = FALSE}
+copa$HAS <- grepl("I10", copa$CID)
+copa$HAS <- as.factor(ifelse(copa$HAS == TRUE, 1,0)) # 101 hipertensos no total
+
+
+hiper <- copa %>%  group_by(equipe) %>% count(HAS)  %>%  mutate(prop = prop.table(n)*100)
+kable(hiper)
+
+
+hipera <- summary(copa$HAS[copa$equipe == "curumim"])
+hiperb <- summary(copa$HAS[copa$equipe == "ceci"])
+hiperc <- matrix(c(hipera,hiperb), ncol=2)
+nome <- c("ausente", "presente")
+hiperm <- as.data.frame(cbind(nome, hiperc))
+names(hiperm)[names(hiperm) == 'nome'] <- 'HIPERTENSÃO'
+names(hiperm)[names(hiperm) == 'V2'] <- 'Curumim'
+names(hiperm)[names(hiperm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de Hipertensos entre as equipes. Existe diferença significativa na proporção de pacientes atendidos por Hipertensão.
+
+```{r}
+kable(hiperm)
+chisq.test(hiperc)
+```
+
+
+
+# DEPRESSÃO
+
+Foi considerado como "depressão" apenas as pessoas que receberam o CID R32
+
+```{r, echo = FALSE}
+copa$depress <- grepl("F32", copa$CID)
+copa$depress <- as.factor(ifelse(copa$depress == TRUE, 1,0)) # 17 com depress?o
+
+
+dep <- copa %>%  group_by(equipe) %>% count(depress)  %>%  mutate(prop = prop.table(n)*100)
+kable(dep)
+
+
+depa <- summary(copa$depress[copa$equipe == "curumim"])
+depb <- summary(copa$depress[copa$equipe == "ceci"])
+depc <- matrix(c(depa,depb), ncol=2)
+nome <- c("ausente", "presente")
+depm <- as.data.frame(cbind(nome, depc))
+names(depm)[names(depm) == 'nome'] <- 'Depressão'
+names(depm)[names(depm) == 'V2'] <- 'Curumim'
+names(depm)[names(depm) == 'V3'] <- 'Ceci'
+```
+
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Depressão
+
+
+```{r}
+kable(depm)
+
+chisq.test(depc)
+```
+
+
+
+
+
+
+# ANSIEDADE
+
+Apoenas o CID F41
+
+```{r, echo = FALSE}
+
+copa$anx <- grepl("F41", copa$CID)
+copa$anx <- as.factor(ifelse(copa$anx == TRUE, 1,0)) # 23 com ansiedade
+
+anxi <- copa %>%  group_by(equipe) %>% count(anx)  %>%  mutate(prop = prop.table(n)*100)
+kable(anxi)
+
+
+anxia <- summary(copa$anx[copa$equipe == "curumim"])
+anxib <- summary(copa$anx[copa$equipe == "ceci"])
+anxic <- matrix(c(anxia,anxib), ncol=2)
+nome <- c("ausente", "presente")
+anxim <- as.data.frame(cbind(nome, anxic))
+names(anxim)[names(anxim) == 'nome'] <- 'Transtorno de Ansiedade'
+names(anxim)[names(anxim) == 'V2'] <- 'Curumim'
+names(anxim)[names(anxim) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Transtorno de Ansiedade
+
+
+```{r}
+kable(anxim)
+chisq.test(anxic)
+```
+
+
+
+# MUSCULAR
+
+Todas as pessoas que receberma algum CID entre "M10" at? "M99"
+
+
+```{r, echo = FALSE}
+muscular <- c("M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9")
+copa$musc <- grepl(paste(muscular, collapse = "|"), copa$CID)
+copa$musc <- as.factor(ifelse(copa$musc == TRUE, 1,0)) # 39 com algum problema osteomuscular
+
+
+mus <- copa %>%  group_by(equipe) %>% count(musc)  %>%  mutate(prop = prop.table(n)*100)
+kable(mus)
+
+
+musa <- summary(copa$musc[copa$equipe == "curumim"])
+musb <- summary(copa$musc[copa$equipe == "ceci"])
+musc <- matrix(c(musa,musb), ncol=2)
+nome <- c("ausente", "presente")
+musm <- as.data.frame(cbind(nome, musc))
+names(musm)[names(musm) == 'nome'] <- 'Problemas Músculo-esqueléticos'
+names(musm)[names(musm) == 'V2'] <- 'Curumim'
+names(musm)[names(musm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Problemas Músculo-esqueléticos
+
+```{r}
+kable(musm)
+chisq.test(musc)
+```
+
+
+
+# Conjuntivite
+
+CIDs "H25" e "H26"
+
+
+```{r, echo = FALSE}
+conjuntivite <- c("H25", "H26")
+copa$conju <- grepl(paste(conjuntivite, collapse = "|"), copa$CID)
+copa$conju <- as.factor(ifelse(copa$conju == TRUE, 1,0)) # 10 com conjuntivite
+
+
+conj <- copa %>%  group_by(equipe) %>% count(conju)  %>%  mutate(prop = prop.table(n)*100)
+kable(conj)
+
+
+conja <- summary(copa$conju[copa$equipe == "curumim"])
+conjb <- summary(copa$conju[copa$equipe == "ceci"])
+conjc <- matrix(c(conja,conjb), ncol=2)
+nome <- c("ausente", "presente")
+conjm <- as.data.frame(cbind(nome, conjc))
+names(conjm)[names(conjm) == 'nome'] <- 'Problemas oftalmológicos'
+names(conjm)[names(conjm) == 'V2'] <- 'Curumim'
+names(conjm)[names(conjm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Problemas oftalmológicos
+
+
+```{r}
+kable(conjm)
+chisq.test(conjc)
+```
+
+
+
+# Genito-Urinário
+
+Todos os CIDs enre "N10" e "N99".
+
+```{r, echo = FALSE}
+urinario <- c("N1", "N2", "N3", "N4", "N5", "N6", "N7", "N8", "N9")
+copa$urina <- grepl(paste(urinario, collapse = "|"), copa$CID)
+copa$urina <- as.factor(ifelse(copa$urina == TRUE, 1,0)) # 33 com problema urin?rio
+
+
+uro <- copa %>%  group_by(equipe) %>% count(urina)  %>%  mutate(prop = prop.table(n)*100)
+kable(uro)
+
+
+uroa <- summary(copa$urina[copa$equipe == "curumim"])
+urob <- summary(copa$urina[copa$equipe == "ceci"])
+uroc <- matrix(c(uroa,urob), ncol=2)
+nome <- c("ausente", "presente")
+urom <- as.data.frame(cbind(nome, uroc))
+names(urom)[names(urom) == 'nome'] <- 'Problemas Urinários'
+names(urom)[names(urom) == 'V2'] <- 'Curumim'
+names(urom)[names(urom) == 'V3'] <- 'Ceci'
+```
+
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por problemas urinários
+
+```{r}
+kable(urom)
+chisq.test(uroc)
+```
+
+
+# IRC
+
+Todos os CIDs entre "N17", "N18" e "N19".
+
+
+```{r, echo = FALSE}
+renal <- c("N17", "N18", "N19")
+copa$IRC <- grepl(paste(renal, collapse = "|"), copa$CID)
+copa$IRC <- as.factor(ifelse(copa$IRC == TRUE, 1,0)) # 8 com Insufici?ncia Renal
+
+
+renal <- copa %>%  group_by(equipe) %>% count(IRC)  %>%  mutate(prop = prop.table(n)*100)
+kable(renal)
+
+
+
+renala <- summary(copa$IRC[copa$equipe == "curumim"])
+renalb <- summary(copa$IRC[copa$equipe == "ceci"])
+renalc <- matrix(c(renala,renalb), ncol=2)
+nome <- c("ausente", "presente")
+renalm <- as.data.frame(cbind(nome, renalc))
+names(renalm)[names(renalm) == 'nome'] <- 'Insuficiência Renal'
+names(renalm)[names(renalm) == 'V2'] <- 'Curumim'
+names(renalm)[names(renalm) == 'V3'] <- 'Ceci'
+```
+
+
+#### Teste quiquadrado comparando as proporções de Insuficiência Renal entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Doença renal crônica.
+
+```{r}
+kable(renalm)
+
+chisq.test(renalc)
+```
+
+
+
+# Neoplasias
+
+Todos os CIDs entre "C00" e "D48"
+
+
+```{r, echo = FALSE}
+cancer <- c("C0", "C1", "C2", "C3", "C4", "C5", "C6", 
+           "C7", "C8", "C9", "D0", "D1", "D2", "D3", "D41", 
+           "D42", "D43", "D44", "D45", "D46", "D47", "D48")
+copa$CA <- grepl(paste(cancer, collapse = "|"), copa$CID)
+copa$CA <- as.factor(ifelse(copa$CA == TRUE, 1,0)) # 15 pessoas com c?ncer
+
+
+cancer <- copa %>%  group_by(equipe) %>% count(CA)  %>%  mutate(prop = prop.table(n)*100)
+kable(cancer)
+
+
+cancera <- summary(copa$CA[copa$equipe == "curumim"])
+cancerb <- summary(copa$CA[copa$equipe == "ceci"])
+cancerc <- matrix(c(cancera,cancerb), ncol=2)
+nome <- c("ausente", "presente")
+cancerm <- as.data.frame(cbind(nome, cancerc))
+names(cancerm)[names(cancerm) == 'nome'] <- 'Neoplasias'
+names(cancerm)[names(cancerm) == 'V2'] <- 'Curumim'
+names(cancerm)[names(cancerm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de pessoas com Neoplasias entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Neoplasias entre as equipes.
+
+```{r}
+kable(cancerm)
+chisq.test(cancerc)
+```
+
+
+
+
+# Doenças Infecto-parasitárias
+
+Todos os CIDs entre "A00" e "B99"
+
+
+```{r, echo = FALSE}
+infecto_parasitario <- c("A0", "A1", "A2", "A3", "A4", "A5", 
+                         "A6", "A7", "A8", "A9", "B0", "B1", 
+                         "B2", "B3", "B4", "B5", "B6", "B7", 
+                         "B8", "B9")
+copa$infecto <- grepl(paste(infecto_parasitario, collapse = "|"), copa$CID)
+copa$infecto <- as.factor(ifelse(copa$infecto == TRUE, 1,0)) # 29 com algum problema infectoparasit?rio
+
+
+infec <- copa %>%  group_by(equipe) %>% count(infecto)  %>%  mutate(prop = prop.table(n)*100)
+kable(infec)
+
+
+infeca <- summary(copa$infecto[copa$equipe == "curumim"])
+infecb <- summary(copa$infecto[copa$equipe == "ceci"])
+infecc <- matrix(c(infeca,infecb), ncol=2)
+nome <- c("ausente", "presente")
+infecm <- as.data.frame(cbind(nome, infecc))
+names(infecm)[names(infecm) == 'nome'] <- 'Doenças Infecto-parasitárias'
+names(infecm)[names(infecm) == 'V2'] <- 'Curumim'
+names(infecm)[names(infecm) == 'V3'] <- 'Ceci'
+```
+
+### Teste quiquadrado comparando as proporções de Doenças Infecto-parasitárias entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Doenças Infecto-parasitárias.
+
+
+```{r}
+kable(infecm)
+chisq.test(infecc)
+```
+
+
+
+# Obesidade
+
+
+```{r, echo = FALSE}
+obesidade <- c("E65", "E66", "E67")
+copa$obeso <- grepl(paste(obesidade, collapse = "|"), copa$CID)
+copa$obeso <- as.factor(ifelse(copa$obeso == TRUE, 1,0)) # 10 com obesidade
+
+
+obes <- copa %>%  group_by(equipe) %>% count(obeso)  %>%  mutate(prop = prop.table(n)*100)
+kable(obes)
+
+
+obesa <- summary(copa$obeso[copa$equipe == "curumim"])
+obesb <- summary(copa$obeso[copa$equipe == "ceci"])
+obesc <- matrix(c(obesa,obesb), ncol=2)
+nome <- c("ausente", "presente")
+obesm <- as.data.frame(cbind(nome, obesc))
+names(obesm)[names(obesm) == 'nome'] <- 'Obesidade'
+names(obesm)[names(obesm) == 'V2'] <- 'Curumim'
+names(obesm)[names(obesm) == 'V3'] <- 'Ceci'
+```
+
+#### Teste quiquadrado comparando as proporções de obesidade entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos classificados como obesos.
+
+```{r}
+kable(obesm)
+chisq.test(obesc)
+```
+
+
+
+# Tireóide
+
+Todos os CIDs entre "E00" e "E07".
+
+```{r, echo = FALSE}
+tireoide <- c("E00", "E01", "E02", "E03", "E04", "E05", "E06", "E07")
+copa$tireo <- grepl(paste(tireoide, collapse = "|"), copa$CID)
+copa$tireo <- as.factor(ifelse(copa$tireo == TRUE, 1,0)) # 22 com problema de tire?ide
+
+tir <- copa %>%  group_by(equipe) %>% count(tireo)  %>%  mutate(prop = prop.table(n)*100)
+kable(tir)
+
+
+tireoa <- summary(copa$tireo[copa$equipe == "curumim"])
+tireob <- summary(copa$tireo[copa$equipe == "ceci"])
+tireoc <- matrix(c(tireoa,tireob), ncol=2)
+nome <- c("ausente", "presente")
+tireom <- as.data.frame(cbind(nome, tireoc))
+names(tireom)[names(tireom) == 'nome'] <- 'Transtornos da Tireóide'
+names(tireom)[names(tireom) == 'V2'] <- 'Curumim'
+names(tireom)[names(tireom) == 'V3'] <- 'Ceci'
+```
+
+
+#### Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Existe uma diferença significativa na proporção de pacientes atendidos com transtornos da tireóide.
+
+```{r}
+kable(tireom)
+
+
+chisq.test(tireoc)
+```
+
+
+
+## Estatísticas descritivas dos dados
+
+
+```{r}
+vars <- c("DM", "HAS", "depress", "anx", "musc", "conju", "urina", "IRC", "CA", "infecto", "obeso", "tireo")
+
+a <- as.data.frame(sapply(copa[vars], summary))
+a
+
+kable(a)
+```
+
+#### Acima o sumário de todos os CIDs estudados e o número de pacientes na clínica categorizados em cada um. As linhas representam casos (1) e não-casos(0)
+
+
+
+```{r}
+total <- colSums(a)
+a <- rbind(a, total)
+
+at <- as.data.frame(t(a)) # transpor a tabela
+
+colnames(at)[1] <- "ausente"
+colnames(at)[2] <- "presente"
+colnames(at)[3] <- "total"
+
+
+kable(at)
+
+at$id <- seq(1,12) 
+
+at <- at[c(4,1,2)]
+
+at_percent <- round(ns_to_percents(at, denom = "row"),3) 
+
+nomes <- c("Diabetes", "Hipertensão", "Depressão", "Ansiedade", "Problemas Músculo-esqueléticos", 
+           "Conjuntivite", "Problemas urinários", "Insuficiência Renal Crônica",
+           "Câncer", "Doenças Infecto Parasitárias", "Obesidade", "Problemas da Tireóide")
+
+at_percent$morbidades <- cbind(nomes) 
+
+# Unindo as duas tabelas
+final <- merge(at, at_percent, by = "id")
+
+# tirando fora coluna id, n?o mais necess?ria
+final <- final[-1]
+
+# renomeando as vari?veis
+names(final)[names(final) == 'ausente.x'] <- 'ausente (N)'
+names(final)[names(final) == 'ausente.y'] <- 'ausente (%)'
+names(final)[names(final) == 'presente.x'] <- 'presente (N)'
+names(final)[names(final) == 'presente.y'] <- 'presente (%)'
+
+final <- final[,c(5,2,1,4,3)]
+
+kable(final)
+```
+
+
+
+```{r, echo = FALSE}
+copa$DM <- grepl(paste(diabetes, collapse = "|"), copa$CID)
+copa$DM <- as.numeric(ifelse(copa$DM == TRUE, 1,0)) # 29 diab?ticos no total
+copa$HAS <- grepl("I10", copa$CID)
+copa$HAS <- as.numeric(ifelse(copa$HAS == TRUE, 1,0)) # 101 hipertensos no total
+copa$depress <- grepl("F32", copa$CID)
+copa$depress <- as.numeric(ifelse(copa$depress == TRUE, 1,0)) # 17 com depress?o
+copa$anx <- grepl("F41", copa$CID)
+copa$anx <- as.numeric(ifelse(copa$anx == TRUE, 1,0)) # 23 com ansiedade
+muscular <- c("M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9")
+copa$musc <- grepl(paste(muscular, collapse = "|"), copa$CID)
+copa$musc <- as.numeric(ifelse(copa$musc == TRUE, 1,0)) # 39 com algum problema osteomuscular
+renal <- c("N17", "N18", "N19")
+copa$IRC <- grepl(paste(renal, collapse = "|"), copa$CID)
+copa$IRC <- as.numeric(ifelse(copa$IRC == TRUE, 1,0)) # 8 com Insufici?ncia Renal
+cancer <- c("C0", "C1", "C2", "C3", "C4", "C5", "C6", 
+            "C7", "C8", "C9", "D0", "D1", "D2", "D3", "D41", 
+            "D42", "D43", "D44", "D45", "D46", "D47", "D48")
+copa$CA <- grepl(paste(cancer, collapse = "|"), copa$CID)
+copa$CA <- as.numeric(ifelse(copa$CA == TRUE, 1,0)) # 15 pessoas com c?ncer
+obesidade <- c("E65", "E66", "E67")
+copa$obeso <- grepl(paste(obesidade, collapse = "|"), copa$CID)
+copa$obeso <- as.numeric(ifelse(copa$obeso == TRUE, 1,0)) # 10 com obesidade
+tireoide <- c("E00", "E01", "E02", "E03", "E04", "E05", "E06", "E07")
+copa$tireo <- grepl(paste(tireoide, collapse = "|"), copa$CID)
+copa$tireo <- as.numeric(ifelse(copa$tireo == TRUE, 1,0)) # 22 com problema de tire?ide
+
+```
+
+#### Agora analisando Multimorbidade, tomei todos os CIDs de doenças crônicas e os somei. Pacientes que tinham duas ou mais condições crônicas anotadas foram consideradas com multimórbidas. Ao final, analisei se há diferença entre as equipes quanto ? multimorbidade.
+
+```{r, echo = FALSE}
+copa$morbidades <- (copa$DM + copa$HAS + copa$depress + copa$anx + 
+                 copa$musc + copa$IRC + copa$CA + copa$obeso + copa$tireo)
+
+
+copa$MMnum <- ifelse(copa$morbidades >= 2, 1, 0)
+copa$MM <- as.factor(copa$MMnum)
+
+mma <- summary(copa$MM[copa$equipe == "curumim"])
+mmb <- summary(copa$MM[copa$equipe == "ceci"])
+
+mmc <- matrix(c(mma,mmb), ncol=2)
+
+nome <- c("ausente", "presente")
+
+m <- as.data.frame(cbind(nome, mmc))
+
+names(m)[names(m) == 'nome'] <- 'Multimorbidade'
+names(m)[names(m) == 'V2'] <- 'Curumim'
+names(m)[names(m) == 'V3'] <- 'Ceci'
+```
+
+
+
+
+```{r}
+kable(m)
+chisq.test(mmc)
+
+```
+
+
+#### Teste quiquadrado comparando a proporção de multimórbidos nas duas populações. Seu resultado mostra que há diferença significativa entre os dois grupos quanto a proporção de multimórbidos.

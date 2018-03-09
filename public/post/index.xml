@@ -6,31 +6,10 @@
     <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2015 13:09:13 -0600</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
     
     <item>
       <title>Lorem Ipsum</title>
@@ -39,6 +18,25 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>/2015/01/01/lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Perfil de Morbidade dos pacientes de duas Equipes de Saúde da Família do CMS João Barros Barreto, em Copacabana, Rio de Janeiro</title>
+      <link>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</guid>
+      <description>Pessoal, aqui estão algumas análises que fiz apenas sobre alguns dados de morbidade. Ainda há muito mais para se analisar referente a encaminhamentos, solicitação de exames laboratoriais e prescrição de medicamentos. Vou explicando abaixo cada etapa do que fiz.Cálculo da Idade## ## Attaching package: &amp;#39;lubridate&amp;#39;## The following object is masked from &amp;#39;package:plyr&amp;#39;:## ## here## The following object is masked from &amp;#39;package:base&amp;#39;:## ## date## [1] &amp;quot;2002-03-18&amp;quot; &amp;quot;1983-09-18&amp;quot; &amp;quot;1981-10-24&amp;quot; &amp;quot;1972-04-22&amp;quot; &amp;quot;1988-02-08&amp;quot;## [6] &amp;quot;2016-05-26&amp;quot;## [1] 18.</description>
+    </item>
+    
+    <item>
+      <title>Um exeplo para o GBEM</title>
+      <link>/1/01/01/um-exeplo-para-o-gbem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/um-exeplo-para-o-gbem/</guid>
+      <description>Este é um exemplo de apresentação de um relatório de análise de dados feito sobre um estudo realizado por duas residentes de Medicina de Família e Comunidade do município do Rio de Janeiro.
+A pergunta do trabalho era bastante interessante. Ambas fizeram a residência no CMS João Barros Barreto, que fica em Copacabana e que atende à Ladeira dos Tabajaras (área de favela com muitas criançlas e gestantes adolescentes), bem como o próprio bairro de Copacabana, cheio de idosos multimórbidos.</description>
     </item>
     
   </channel>
