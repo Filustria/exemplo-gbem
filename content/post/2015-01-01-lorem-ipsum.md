@@ -1,6 +1,12 @@
 ---
-title: "Lorem Ipsum"
-date: 2015-01-01T13:09:13-06:00
+title: "exemplo para o GBEM"
+date: 2018-03-08
 ---
 
-**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore _magna aliqua_. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Este exemplo mostra o relatório das análises preliminares de um estudo realizado por duas residentes do nosso programa de residência em Medicina de Família e Comunidade da SMS/RJ. 
+
+A pergunta do trabalho era bastante interessante. Ambas fizeram a residência no CMS João Barros Barreto, que fica em Copacabana e que atende à Ladeira dos Tabajaras (área de favela com muitas criançlas e gestantes adolescentes), bem como o próprio bairro de Copacabana, cheio de idosos multimórbidos. Cada uma das residentes fez seu treinamento em equipes com perfis populacionais opostos, o que as motivou à pergunta: "Será que tivemos um treinamento semelhante, dada as diferenças notáveis das populações".
+
+Os dados foram coletados durante uma semana de atendimento no CMS João Barros Barreto em que todos os profissionais médicos e enfermeiros estavam atendendo. Dados de todos os pacientes atendidos pelas duas equipes foram registrados. As informações coletadas abrangiam dados de morbidades (CIDs registrados), medicamentos prescritos, exames solicitados e encaminhamentos solicitados ao serviço secundário. 
+
+Nesta análise preliminar foram analisados somente dados referentes às morbidades dos pacientes e todas as análises foram realizadas comparando as duas equipes em questão. 
