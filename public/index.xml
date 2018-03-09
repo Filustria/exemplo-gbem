@@ -1,52 +1,1258 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
+    <title>Exemplo para o GBEM </title>
     <link>/</link>
-    <description>Recent content on A Hugo website</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-05-05 21:48:51 -0700 -0700</updated>
+
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
-    </item>
     
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
       
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Perfil de Morbidade dos pacientes de duas Equipes de Saúde da Família do CMS João Barros Barreto, em Copacabana, Rio de Janeiro</title>
-      <link>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <item>
+          <title>Lorem Ipsum</title>
+          <link>/2015/01/01/lorem-ipsum/</link>
+          <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+          <author></author>
+          <guid>/2015/01/01/lorem-ipsum/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</guid>
-      <description>Pessoal, aqui estão algumas análises que fiz apenas sobre alguns dados de morbidade. Ainda há muito mais para se analisar referente a encaminhamentos, solicitação de exames laboratoriais e prescrição de medicamentos. Vou explicando abaixo cada etapa do que fiz.Cálculo da Idade## ## Attaching package: &amp;#39;lubridate&amp;#39;## The following object is masked from &amp;#39;package:plyr&amp;#39;:## ## here## The following object is masked from &amp;#39;package:base&amp;#39;:## ## date## [1] &amp;quot;2002-03-18&amp;quot; &amp;quot;1983-09-18&amp;quot; &amp;quot;1981-10-24&amp;quot; &amp;quot;1972-04-22&amp;quot; &amp;quot;1988-02-08&amp;quot;## [6] &amp;quot;2016-05-26&amp;quot;## [1] 18.</description>
-    </item>
     
-    <item>
-      <title>Um exeplo para o GBEM</title>
-      <link>/1/01/01/um-exeplo-para-o-gbem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/um-exeplo-para-o-gbem/</guid>
-      <description>Este é um exemplo de apresentação de um relatório de análise de dados feito sobre um estudo realizado por duas residentes de Medicina de Família e Comunidade do município do Rio de Janeiro.
-A pergunta do trabalho era bastante interessante. Ambas fizeram a residência no CMS João Barros Barreto, que fica em Copacabana e que atende à Ladeira dos Tabajaras (área de favela com muitas criançlas e gestantes adolescentes), bem como o próprio bairro de Copacabana, cheio de idosos multimórbidos.</description>
-    </item>
+        <item>
+          <title>Perfil de Morbidade dos pacientes de duas Equipes de Saúde da Família do CMS João Barros Barreto, em Copacabana, Rio de Janeiro</title>
+          <link>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</link>
+          <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+          <author></author>
+          <guid>/1/01/01/perfil-de-morbidade-dos-pacientes-de-duas-equipes-de-sa%C3%BAde-da-fam%C3%ADlia-do-cms-jo%C3%A3o-barros-barreto-em-copacabana-rio-de-janeiro/</guid>
+          <description>&lt;div id=&#34;pessoal-aqui-estao-algumas-analises-que-fiz-apenas-sobre-alguns-dados-de-morbidade.-ainda-ha-muito-mais-para-se-analisar-referente-a-encaminhamentos-solicitacao-de-exames-laboratoriais-e-prescricao-de-medicamentos.-vou-explicando-abaixo-cada-etapa-do-que-fiz.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pessoal, aqui estão algumas análises que fiz apenas sobre alguns dados de morbidade. Ainda há muito mais para se analisar referente a encaminhamentos, solicitação de exames laboratoriais e prescrição de medicamentos. Vou explicando abaixo cada etapa do que fiz.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;calculo-da-idade&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Cálculo da Idade&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;lubridate&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:plyr&amp;#39;:
+## 
+##     here&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:base&amp;#39;:
+## 
+##     date&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;2002-03-18&amp;quot; &amp;quot;1983-09-18&amp;quot; &amp;quot;1981-10-24&amp;quot; &amp;quot;1972-04-22&amp;quot; &amp;quot;1988-02-08&amp;quot;
+## [6] &amp;quot;2016-05-26&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1]  18.03.2002 18.09.1983  24.10.1981  22.04.1972  08.02.1988  26.05.2016 
+## 277 Levels:  01.02.1963  09.03.2006  18.03.2002  25.04.1948 ... 31.10.1991&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    0.80   26.78   44.84   45.38   65.40   91.31&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Graficamente a informação de idade para cada uma das equipes pode ser vista na tabela abaixo, na qual se observa que a equipes Ceci atendeu uma população mais nova, com dois grupos priorit?rios: crian?as e adultos. A equipe Curumim atendeu prioritariamente idosos, com uma concentração significativa de adultos.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(copa, aes(factor(equipe), idade, color = equipe))
+p + geom_violin() + geom_jitter(height = 0, width = 0.1) + 
+  ggtitle(&amp;quot;Distribuição das Idades dos Pacientes no CMS JBB&amp;quot;) +
+  xlab(&amp;quot;Equipe de Saúde da Família&amp;quot;) + ylab(&amp;quot;Idade&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;diabetes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;DIABETES&lt;/h1&gt;
+&lt;p&gt;Foram consideradas como diabéticos aqueles pacientes que apresentaram os CID “E10”, “E11”, “E12”, “E14” na vari?vel CIDs.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;DM&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;154&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;95.652174&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.347826&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;117&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;84.172662&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.827338&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-diabeticos-entre-as-equipes.-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-diabetes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de Diabéticos entre as equipes. Existe diferença significativa na proporção de pacientes atendidos por Diabetes&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(diabetm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;DIABETES&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;117&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;154&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;22&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(diabetc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  diabetc
+## X-squared = 9.9813, df = 1, p-value = 0.001581&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hipertensao&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;HIPERTENSÃO&lt;/h1&gt;
+&lt;p&gt;Foi considerado como “hipertenso” apenas as pessoas que receberam o CID I10&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HAS&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;76.39752&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;38&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;23.60248&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;76&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;54.67626&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;63&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;45.32374&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-hipertensos-entre-as-equipes.-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-hipertensao.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de Hipertensos entre as equipes. Existe diferença significativa na proporção de pacientes atendidos por Hipertensão.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(hiperm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;HIPERTENSÃO&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;76&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;63&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(hiperc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  hiperc
+## X-squared = 14.802, df = 1, p-value = 0.0001194&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;depressao&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;DEPRESSÃO&lt;/h1&gt;
+&lt;p&gt;Foi considerado como “depressão” apenas as pessoas que receberam o CID R32&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;depress&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;150&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;93.167702&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.832298&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;133&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;95.683453&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.316547&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-depressao&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Depressão&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(depm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Depressão&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;133&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(depc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  depc
+## X-squared = 0.47528, df = 1, p-value = 0.4906&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ansiedade&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ANSIEDADE&lt;/h1&gt;
+&lt;p&gt;Apoenas o CID F41&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;anx&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;148&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;91.925466&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.074534&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;129&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;92.805755&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7.194245&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-transtorno-de-ansiedade&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Transtorno de Ansiedade&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(anxim)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Transtorno de Ansiedade&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;129&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;148&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(anxic)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  anxic
+## X-squared = 0.004648, df = 1, p-value = 0.9456&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;muscular&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;MUSCULAR&lt;/h1&gt;
+&lt;p&gt;Todas as pessoas que receberma algum CID entre “M10” at? “M99”&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;musc&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;141&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;87.57764&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12.42236&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;86.33094&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13.66906&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-problemas-musculo-esqueleticos&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Problemas Músculo-esqueléticos&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(musm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Problemas Músculo-esqueléticos&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;141&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(musc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  musc
+## X-squared = 0.021916, df = 1, p-value = 0.8823&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conjuntivite&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Conjuntivite&lt;/h1&gt;
+&lt;p&gt;CIDs “H25” e “H26”&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;conju&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;156&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;96.894410&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.105590&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;134&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;96.402878&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.597122&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-problemas-oftalmologicos&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Problemas oftalmológicos&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(conjm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Problemas oftalmológicos&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;134&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(conjc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in chisq.test(conjc): Chi-squared approximation may be incorrect&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  conjc
+## X-squared = 8.8611e-31, df = 1, p-value = 1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;genito-urinario&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Genito-Urinário&lt;/h1&gt;
+&lt;p&gt;Todos os CIDs enre “N10” e “N99”.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;urina&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;144&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;89.44099&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10.55901&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;88.48921&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11.51079&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-problemas-urinarios&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por problemas urinários&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(urom)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Problemas Urinários&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(uroc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  uroc
+## X-squared = 0.0060386, df = 1, p-value = 0.9381&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;irc&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;IRC&lt;/h1&gt;
+&lt;p&gt;Todos os CIDs entre “N17”, “N18” e “N19”.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;IRC&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;159&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;98.757764&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.242236&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;133&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;95.683453&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.316547&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-insuficiencia-renal-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-doenca-renal-cronica.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de Insuficiência Renal entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Doença renal crônica.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(renalm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Insuficiência Renal&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;133&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;159&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(renalc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in chisq.test(renalc): Chi-squared approximation may be incorrect&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  renalc
+## X-squared = 1.661, df = 1, p-value = 0.1975&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;neoplasias&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Neoplasias&lt;/h1&gt;
+&lt;p&gt;Todos os CIDs entre “C00” e “D48”&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;CA&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;155&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;96.273292&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.726708&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;130&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;93.525180&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.474820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-pessoas-com-neoplasias-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-neoplasias-entre-as-equipes.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de pessoas com Neoplasias entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Neoplasias entre as equipes.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(cancerm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Neoplasias&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;130&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(cancerc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  cancerc
+## X-squared = 0.67803, df = 1, p-value = 0.4103&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;doencas-infecto-parasitarias&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Doenças Infecto-parasitárias&lt;/h1&gt;
+&lt;p&gt;Todos os CIDs entre “A00” e “B99”&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;infecto&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;142&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;88.198758&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11.801242&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;129&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;92.805755&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7.194245&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-doencas-infecto-parasitarias-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-por-doencas-infecto-parasitarias.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Teste quiquadrado comparando as proporções de Doenças Infecto-parasitárias entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos por Doenças Infecto-parasitárias.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(infecm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Doenças Infecto-parasitárias&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;129&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;142&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(infecc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  infecc
+## X-squared = 1.3239, df = 1, p-value = 0.2499&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;obesidade&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Obesidade&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;obeso&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;154&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;95.652174&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.347826&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;136&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;97.841727&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.158273&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-obesidade-entre-as-equipes.-nao-existe-diferenca-significativa-na-proporcao-de-pacientes-atendidos-classificados-como-obesos.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de obesidade entre as equipes. Não existe diferença significativa na proporção de pacientes atendidos classificados como obesos.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(obesm)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Obesidade&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;136&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;154&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(obesc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in chisq.test(obesc): Chi-squared approximation may be incorrect&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  obesc
+## X-squared = 0.53437, df = 1, p-value = 0.4648&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tireoide&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Tireóide&lt;/h1&gt;
+&lt;p&gt;Todos os CIDs entre “E00” e “E07”.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;equipe&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;tireo&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;n&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;prop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;155&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;96.273292&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ceci&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.726708&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;88.489209&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;curumim&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11.510791&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-as-proporcoes-de-transtornos-da-tireoide-entre-as-equipes.-existe-uma-diferenca-significativa-na-proporcao-de-pacientes-atendidos-com-transtornos-da-tireoide.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando as proporções de transtornos da tireóide entre as equipes. Existe uma diferença significativa na proporção de pacientes atendidos com transtornos da tireóide.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(tireom)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Transtornos da Tireóide&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(tireoc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  tireoc
+## X-squared = 5.5552, df = 1, p-value = 0.01843&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estatisticas-descritivas-dos-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Estatísticas descritivas dos dados&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vars &amp;lt;- c(&amp;quot;DM&amp;quot;, &amp;quot;HAS&amp;quot;, &amp;quot;depress&amp;quot;, &amp;quot;anx&amp;quot;, &amp;quot;musc&amp;quot;, &amp;quot;conju&amp;quot;, &amp;quot;urina&amp;quot;, &amp;quot;IRC&amp;quot;, &amp;quot;CA&amp;quot;, &amp;quot;infecto&amp;quot;, &amp;quot;obeso&amp;quot;, &amp;quot;tireo&amp;quot;)
+
+a &amp;lt;- as.data.frame(sapply(copa[vars], summary))
+a&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    DM HAS depress anx musc conju urina IRC  CA infecto obeso tireo
+## 0 271 199     283 277  261   290   267 292 285     271   290   278
+## 1  29 101      17  23   39    10    33   8  15      29    10    22&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;DM&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;HAS&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;depress&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;anx&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;musc&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;conju&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;urina&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;IRC&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;CA&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;infecto&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;obeso&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;tireo&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;199&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;283&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;277&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;267&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;292&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;285&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;278&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;39&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;33&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;acima-o-sumario-de-todos-os-cids-estudados-e-o-numero-de-pacientes-na-clinica-categorizados-em-cada-um.-as-linhas-representam-casos-1-e-nao-casos0&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Acima o sumário de todos os CIDs estudados e o número de pacientes na clínica categorizados em cada um. As linhas representam casos (1) e não-casos(0)&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;total &amp;lt;- colSums(a)
+a &amp;lt;- rbind(a, total)
+
+at &amp;lt;- as.data.frame(t(a)) # transpor a tabela
+
+colnames(at)[1] &amp;lt;- &amp;quot;ausente&amp;quot;
+colnames(at)[2] &amp;lt;- &amp;quot;presente&amp;quot;
+colnames(at)[3] &amp;lt;- &amp;quot;total&amp;quot;
+
+
+kable(at)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;ausente&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;presente&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;total&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DM&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;HAS&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;199&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;depress&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;283&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;anx&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;277&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;musc&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;39&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;conju&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;urina&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;267&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;33&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;IRC&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;292&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;CA&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;285&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;infecto&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;obeso&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;tireo&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;278&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;at$id &amp;lt;- seq(1,12) 
+
+at &amp;lt;- at[c(4,1,2)]
+
+at_percent &amp;lt;- round(ns_to_percents(at, denom = &amp;quot;row&amp;quot;),3) 
+
+nomes &amp;lt;- c(&amp;quot;Diabetes&amp;quot;, &amp;quot;Hipertensão&amp;quot;, &amp;quot;Depressão&amp;quot;, &amp;quot;Ansiedade&amp;quot;, &amp;quot;Problemas Músculo-esqueléticos&amp;quot;, 
+           &amp;quot;Conjuntivite&amp;quot;, &amp;quot;Problemas urinários&amp;quot;, &amp;quot;Insuficiência Renal Crônica&amp;quot;,
+           &amp;quot;Câncer&amp;quot;, &amp;quot;Doenças Infecto Parasitárias&amp;quot;, &amp;quot;Obesidade&amp;quot;, &amp;quot;Problemas da Tireóide&amp;quot;)
+
+at_percent$morbidades &amp;lt;- cbind(nomes) 
+
+# Unindo as duas tabelas
+final &amp;lt;- merge(at, at_percent, by = &amp;quot;id&amp;quot;)
+
+# tirando fora coluna id, n?o mais necess?ria
+final &amp;lt;- final[-1]
+
+# renomeando as vari?veis
+names(final)[names(final) == &amp;#39;ausente.x&amp;#39;] &amp;lt;- &amp;#39;ausente (N)&amp;#39;
+names(final)[names(final) == &amp;#39;ausente.y&amp;#39;] &amp;lt;- &amp;#39;ausente (%)&amp;#39;
+names(final)[names(final) == &amp;#39;presente.x&amp;#39;] &amp;lt;- &amp;#39;presente (N)&amp;#39;
+names(final)[names(final) == &amp;#39;presente.y&amp;#39;] &amp;lt;- &amp;#39;presente (%)&amp;#39;
+
+final &amp;lt;- final[,c(5,2,1,4,3)]
+
+kable(final)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;morbidades&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;presente (N)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;ausente (N)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;presente (%)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;ausente (%)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Diabetes&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.097&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.903&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Hipertensão&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;101&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;199&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.337&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.663&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Depressão&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;283&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.057&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.943&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Ansiedade&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;277&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.077&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Problemas Músculo-esqueléticos&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;39&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;261&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.130&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.870&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Conjuntivite&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.033&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.967&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Problemas urinários&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;33&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;267&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.890&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Insuficiência Renal Crônica&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;292&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.027&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.973&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Câncer&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;285&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.050&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.950&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Doenças Infecto Parasitárias&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;29&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;271&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.097&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.903&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Obesidade&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;290&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.033&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.967&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Problemas da Tireóide&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;278&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.073&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.927&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;agora-analisando-multimorbidade-tomei-todos-os-cids-de-doencas-cronicas-e-os-somei.-pacientes-que-tinham-duas-ou-mais-condicoes-cronicas-anotadas-foram-consideradas-com-multimorbidas.-ao-final-analisei-se-ha-diferenca-entre-as-equipes-quanto-multimorbidade.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Agora analisando Multimorbidade, tomei todos os CIDs de doenças crônicas e os somei. Pacientes que tinham duas ou mais condições crônicas anotadas foram consideradas com multimórbidas. Ao final, analisei se há diferença entre as equipes quanto ? multimorbidade.&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(m)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Multimorbidade&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Curumim&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Ceci&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;ausente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;92&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;presente&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;47&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;32&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chisq.test(mmc)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pearson&amp;#39;s Chi-squared test with Yates&amp;#39; continuity correction
+## 
+## data:  mmc
+## X-squared = 6.7683, df = 1, p-value = 0.009279&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;teste-quiquadrado-comparando-a-proporcao-de-multimorbidos-nas-duas-populacoes.-seu-resultado-mostra-que-ha-diferenca-significativa-entre-os-dois-grupos-quanto-a-proporcao-de-multimorbidos.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Teste quiquadrado comparando a proporção de multimórbidos nas duas populações. Seu resultado mostra que há diferença significativa entre os dois grupos quanto a proporção de multimórbidos.&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+      
     
+      
+        <item>
+          <title>Um exeplo para o GBEM</title>
+          <link>/1/01/01/um-exeplo-para-o-gbem/</link>
+          <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+          <author></author>
+          <guid>/1/01/01/um-exeplo-para-o-gbem/</guid>
+          <description>&lt;p&gt;Este é um exemplo de apresentação de um relatório de análise de dados feito sobre um estudo realizado por duas residentes de Medicina de Família e Comunidade do município do Rio de Janeiro.&lt;/p&gt;
+
+&lt;p&gt;A pergunta do trabalho era bastante interessante. Ambas fizeram a residência no CMS João Barros Barreto, que fica em Copacabana e que atende à Ladeira dos Tabajaras (área de favela com muitas criançlas e gestantes adolescentes), bem como o próprio bairro de Copacabana, cheio de idosos multimórbidos. Cada uma das residentes fez seu treinamento em equipes com perfis populacionais opostos, o que as motivou à pergunta: &amp;ldquo;Será que tivemos um treinamento semelhante, dada as diferenças notáveis das populações&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Os dados foram coletados durante uma semana típica de atendimento na clínica em que todos os profissionais médicos e enfermeiros das duas equipes estavam trabalhando. Foram registrados todos as consultas realizadas pelas duas equipes e os dados de todos esses pacientes foram anotados. As informações coletadas abracavam dados socioeconômicos dos pacientes, dados de morbidade (CIDs registrados), exames laboratoriais solicitados, medicamentos prescritos e encaminhamentos solicitados para o nível secundário.&lt;/p&gt;
+
+&lt;p&gt;As análises preliminares postadas aqui foram feitas unicamente sobre as morbidades registradas no prontuário.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::new_post(&amp;quot;Post Title&amp;quot;, ext = &#39;.Rmd&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>
